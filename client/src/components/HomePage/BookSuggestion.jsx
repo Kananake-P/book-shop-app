@@ -83,12 +83,10 @@ function BookSuggestion() {
                   className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
                   onClick={() => {
                     setImageId(
-                      data.id === 1 ? Book1 : 
-                      data.id === 2 ? Book2 : 
-                      Book3
+                      data.id === 1 ? Book1 : data.id === 2 ? Book2 : Book3
                     );
-                    setTitle(data.title) 
-                    setDescription(data.description) 
+                    setTitle(data.title);
+                    setDescription(data.description);
                   }}
                 />
               ))}
