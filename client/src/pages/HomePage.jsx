@@ -4,6 +4,7 @@ import BestBook from "../components/HomePage/BestBook";
 import Banner from "../components/HomePage/Banner";
 import DownloadBanner from "../components/HomePage/DownloadBanner";
 import BookCard from "../components/HomePage/BookCard";
+import CustomerComment from "../components/HomePage/CustomerComment";
 function Homepage() {
   return (
     <>
@@ -14,6 +15,7 @@ function Homepage() {
         <Banner />
         <DownloadBanner />
         <BookCard />
+        <CustomerComment />
       </div>
     </>
   );
