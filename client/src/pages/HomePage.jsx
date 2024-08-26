@@ -1,8 +1,16 @@
 import Navbar from "../components/HomePage/Navbar";
+import BookSuggestion from "../components/HomePage/BookSuggestion";
+import BestBook from "../components/HomePage/BestBook";
+import Banner from "../components/HomePage/Banner";
 function Homepage() {
   return (
     <>
-      <Navbar />
+      <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+        <Navbar />
+        <BookSuggestion />
+        <BestBook />
+        <Banner />
+      </div>
     </>
   );
 }
