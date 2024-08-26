@@ -81,7 +81,7 @@ function CustomerComment() {
         <div>
           <Slider {...settings}>
             {testimonialData.map((data) => (
-              <div>
+              <div className="my-6">
                 <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                   <div>
                     <img
