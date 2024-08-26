@@ -3,6 +3,7 @@ import BookSuggestion from "../components/HomePage/BookSuggestion";
 import BestBook from "../components/HomePage/BestBook";
 import Banner from "../components/HomePage/Banner";
 import DownloadBanner from "../components/HomePage/DownloadBanner";
+import BookCard from "../components/HomePage/BookCard";
 function Homepage() {
   return (
     <>
@@ -11,7 +12,8 @@ function Homepage() {
         <BookSuggestion />
         <BestBook />
         <Banner />
-        <DownloadBanner/>
+        <DownloadBanner />
+        <BookCard />
       </div>
     </>
   );
