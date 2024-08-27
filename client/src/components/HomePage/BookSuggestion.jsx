@@ -28,7 +28,7 @@ const ImageList = [
   },
 ];
 
-function BookSuggestion() {
+function BookSuggestion({handleOrderPopup}) {
   const [imageId, setImageId] = useState(Book1);
   const [title, setTitle] = useState("His Life will forever be Changed");
   const [description, setDescription] = useState(
@@ -72,6 +72,7 @@ function BookSuggestion() {
             </p>
             <div>
               <button
+                onClick={handleOrderPopup}
                 data-aos="zoom-in"
                 className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200"
               >
@@ -92,7 +93,7 @@ function BookSuggestion() {
               />
             </div>
             {/* other image list */}
-            <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
+            <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-gray-100 dark:bg-gray-950 rounded-full">
               {ImageList.map((data) => (
                 <img
                 data-aos="zoom-in"
