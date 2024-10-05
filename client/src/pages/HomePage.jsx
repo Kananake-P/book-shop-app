@@ -39,7 +39,7 @@ function Homepage() {
         <Banner />
         <DownloadBanner />
         <BookCard />
-        <CustomerComment />
+        {/* <CustomerComment /> */}
         <Footer />
         <Popup handleOrderPopup={handleOrderPopup} orderPopup={orderPopup} />
       </div>

@@ -1,44 +1,46 @@
 import React from "react";
-import Book1 from "../../assets/books/book1.jpg";
-import Book2 from "../../assets/books/book2.jpg";
-import Book3 from "../../assets/books/book3.jpg";
+import Book1 from "../../assets/books/Harry Potter and the Order of the Phoenix.jpg";
+import Book2 from "../../assets/books/NewKid.jpg";
+import Book3 from "../../assets/books/BadGuys.jpg";
+import Book4 from "../../assets/books/Zonal Marking.jpg";
+import Book5 from "../../assets/books/Sapiens A Brief History of Humankind.jpg";
 import { FaStar } from "react-icons/fa";
 
 const BooksData = [
   {
     id: 1,
     img: Book1,
-    title: "Who's there",
-    rating: 5.0,
-    author: "Someone",
+    title: "Harry Potter ",
+    rating: 4.8,
+    author: "J.K. Rowling",
   },
   {
     id: 2,
     img: Book2,
-    title: "His Life",
-    rating: 4.5,
-    author: "John",
+    title: "NewKid",
+    rating: 4.7,
+    author: "Jerry Craft",
   },
   {
     id: 3,
     img: Book3,
-    title: "Lost boys",
+    title: "BadGuys",
     rating: 4.7,
-    author: "Lost Girl",
+    author: "Aaron Blabey",
   },
   {
     id: 4,
-    img: Book2,
-    title: "His Life",
-    rating: 4.4,
-    author: "Someone",
+    img: Book4,
+    title: "Zonal Marking",
+    rating: 4.7,
+    author: "Michael Cox",
   },
   {
     id: 5,
-    img: Book1,
-    title: "Who's There",
-    rating: 4.5,
-    author: "Someone",
+    img: Book5,
+    title: "Sapiens",
+    rating: 4.6,
+    author: " Yuval Noah Harari",
   },
 ];
 

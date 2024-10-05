@@ -1,45 +1,56 @@
 import React, { useState } from "react";
-import Book1 from "../../assets/books/book1.jpg";
-import Book2 from "../../assets/books/book2.jpg";
-import Book3 from "../../assets/books/book3.jpg";
+import Book1 from "../../assets/books/The Black Swan.jpg";
+import Book2 from "../../assets/books/Learn to Earn.jpg";
+import Book3 from "../../assets/books/Sir Alex Ferguson.jpg";
 import Vector from "../../assets/website/blue-pattern.png";
 
 const ImageList = [
   {
     id: 1,
     img: Book1,
-    title: "Who's there",
+    title: "The Black Swan",
     description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Do you know what the true definition of a Black Swan is?",
+    author: "Nassim Taleb",
   },
   {
     id: 2,
     img: Book2,
-    title: "His Life will forever be Changed",
+    title: "Learn to Earn",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Learn Investing with Peter Lynch is one of the significant works by Peter Lynch.",
+    author: "Peter Lynch",
   },
   {
     id: 3,
     img: Book3,
-    title: "Lost Boy",
+    title: "Alex Ferguson: My Autobiography",
     description:
-      "Lost Boy, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The celebratory, revealing, inspiring, and entertaining autobiography of the greatest manager in the history of British soccer.",
+    author: "Sir Alex Ferguson",
   },
 ];
 
-function BookSuggestion({handleOrderPopup}) {
+function BookSuggestion({ handleOrderPopup }) {
   const [imageId, setImageId] = useState(Book1);
-  const [title, setTitle] = useState("His Life will forever be Changed");
+  const [title, setTitle] = useState("The Black Swan");
   const [description, setDescription] = useState(
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "Do you know what the true definition of a Black Swan is?"
   );
+  const [author, setAuthor] = useState("Nassim Taleb");
   const bgImage = {
     backgroundImage: `url(${Vector})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "100%",
+  };
+
+  const limitChar = (text, maxchar) => {
+    if (text.length > maxchar) {
+      return text.substring(0, maxchar) + "...";
+    }
+    return text;
   };
 
   return (
@@ -59,7 +70,7 @@ function BookSuggestion({handleOrderPopup}) {
             >
               {title}
               <p className="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary">
-                by Anonymous
+                by {author}
               </p>
             </h1>
             <p
@@ -96,10 +107,8 @@ function BookSuggestion({handleOrderPopup}) {
             <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-gray-100 dark:bg-gray-950 rounded-full">
               {ImageList.map((data) => (
                 <img
-                data-aos="zoom-in"
-                data-aos-once="true"
-
-
+                  data-aos="zoom-in"
+                  data-aos-once="true"
                   src={data.img}
                   className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
                   onClick={() => {
@@ -108,6 +117,7 @@ function BookSuggestion({handleOrderPopup}) {
                     );
                     setTitle(data.title);
                     setDescription(data.description);
+                    setAuthor(data.author);
                   }}
                 />
               ))}

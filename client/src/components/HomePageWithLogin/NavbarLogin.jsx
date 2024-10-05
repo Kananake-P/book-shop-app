@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/website/BookLogo.png";
+import Logo from "../../assets/website/logo.png";
 import { FaCaretDown } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";
@@ -31,15 +31,15 @@ const DropdownLinks = [
   },
 ];
 
-function Navbar({ handleOrderPopup }) {
+function NavbarLogin({handleOrderPopup}) {
   return (
     <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="container py-3 sm:py-0">
         <div className="flex justify-between items-center">
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-              <img src={Logo} alt="" className="w-16" />
-              Books
+              <img src={Logo} alt="" className="w-10" />
+              Books 
             </a>
           </div>
           <div className="flex items-center justify-between gap-4 ">
@@ -86,10 +86,9 @@ function Navbar({ handleOrderPopup }) {
                 </div>
               </li>
             </ul>
-            <button
-              onClick={handleOrderPopup}
-              className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full flex items-center gap-3 hover:scale-105 duration-300"
-            >
+            <button 
+            onClick={handleOrderPopup}
+            className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full flex items-center gap-3 hover:scale-105 duration-300">
               Order
               <FaShoppingCart className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
