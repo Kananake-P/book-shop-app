@@ -31,7 +31,7 @@ const DropdownLinks = [
   },
 ];
 
-function Navbar({handleOrderPopup}) {
+function NavbarLogin({handleOrderPopup}) {
   return (
     <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="container py-3 sm:py-0">

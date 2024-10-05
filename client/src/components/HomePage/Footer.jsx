@@ -35,7 +35,7 @@ function Footer() {
           {/* company details */}
           <div className="py-8 px-4">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-              Books Store
+              Books Shop
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
@@ -54,13 +54,13 @@ function Footer() {
             </div>
 
             <div className="flex items-center gap-3 mt-6 ">
-              <a href="#">
+              <a href="https://www.instagram.com/">
                 <FaInstagram className="text-3xl" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com">
                 <FaFacebook className="text-3xl" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/">
                 <FaLinkedin className="text-3xl" />
               </a>
             </div>
@@ -70,7 +70,7 @@ function Footer() {
             <div>
               <div className="py-8 px-4">
                 <h1 className="text-xl font-bold sm:text-left text-justify mb-3">
-                  Important Links
+                  About Us
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((data) => (
@@ -85,7 +85,7 @@ function Footer() {
             <div>
               <div className="py-8 px-4">
                 <h1 className="text-xl font-bold sm:text-left text-justify mb-3">
-                  Important Links
+                  FAQ
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((data) => (
@@ -100,7 +100,7 @@ function Footer() {
             <div>
               <div className="py-8 px-4">
                 <h1 className="text-xl font-bold sm:text-left text-justify mb-3">
-                  Important Links
+                  Our Services
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((data) => (
@@ -117,7 +117,9 @@ function Footer() {
         {/* copyright section */}
         <div>
           <div className="border-t-2 border-gray-300/50">
-            <p className="text-center py-10">Copyright &copy; 2022. All rights reserved </p>
+            <p className="text-center py-10">
+              Copyright &copy; 2022. All rights reserved{" "}
+            </p>
           </div>
         </div>
       </div>

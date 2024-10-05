@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../../contexts/authentication";
-import Logo from "../../assets/website/logo.png";
+import Logo from "../../assets/website/BookLogo.png";
 
 function RegisterForm() {
   const [firstname, setFirstname] = useState("");
@@ -31,7 +31,7 @@ function RegisterForm() {
 
           <div className="flex justify-center mt-[30px] gap-[20px]">
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-              <img src={Logo} alt="" className="w-20" />
+              <img src={Logo} alt="" className="w-28" />
             </a>
             <h1 className="font-bold text-2xl sm:text-3xl flex  items-center text-primary relative top-1">
               Books Shop
@@ -41,7 +41,7 @@ function RegisterForm() {
           <h1 className="text-[20px] flex justify-center mt-[-10px]">
             Register Information
           </h1>
-          <div className="flex flex-row gap-[20px] justify-center">
+          <div className="flex flex-row gap-[20px] justify-center ">
             <div className="flex flex-col gap-[5px]">
               <label>First name *</label>
               <input
@@ -51,7 +51,7 @@ function RegisterForm() {
                   setFirstname(event.target.value);
                 }}
                 value={firstname}
-                className="rounded-md w-[400px] h-[40px]"
+                className="rounded-md w-[400px] h-[40px] "
               />
             </div>
             <div className="flex flex-col gap-[5px]">
