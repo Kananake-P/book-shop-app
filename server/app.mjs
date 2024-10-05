@@ -29,32 +29,6 @@ app.get("/", async (req, res) => {
   return res.status(200).json(results.rows);
 });
 
-// app.post("/register", async (req, res) => {
-//   const newUser = {
-//     ...req.body,
-//     created_at: new Date(),
-//   };
-
-//   const salt = await bcrypt .genSalt(10)
-//   newUser.password = await bcrypt.hash(newUser.password, salt)
-//   await connectionPool.query(
-//     `insert into users_table (firstname, lastname, email, password, mobile_number, created_at )
-//     values ($1, $2, $3, $4, $5, $6)`,
-//     [
-//       newUser.firstname,
-//       newUser.lastname,
-//       newUser.email,
-//       newUser.password,
-//       newUser.mobile_number,
-//       newUser.created_at,
-//     ]
-//   );
-
-//   return res.status(201).json({
-//     message: "Create post sucessfully",
-//   });
-// });
-
 app.listen(port, () => {
   console.log(`Sever is running at ${port}`);
 });
