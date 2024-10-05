@@ -1,30 +1,30 @@
 import React from "react";
-import Img1 from "../../assets/books/book2.jpg";
-import Img2 from "../../assets/books/book1.jpg";
-import Img3 from "../../assets/books/book3.jpg";
+import Img1 from "../../assets/books/The Black Swan.jpg";
+import Img2 from "../../assets/books/Learn to Earn.jpg";
+import Img3 from "../../assets/books/Sir Alex Ferguson.jpg";
 import { FaStar } from "react-icons/fa";
 
 const BooksData = [
   {
     id: 1,
     img: Img1,
-    title: "His Life",
+    title: "The Black Swan",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Do you know what the true definition of a Black Swan is?",
   },
   {
     id: 2,
     img: Img2,
-    title: "Who's there",
+    title: "Learn to Earn",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Learn Investing with Peter Lynch is one of the significant works by Peter Lynch.",
   },
   {
     id: 3,
     img: Img3,
-    title: "Lost Boy",
+    title: "Alex Ferguson: My Autobiography",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The celebratory, revealing, inspiring, and entertaining autobiography of the greatest manager in the history of British soccer.",
   },
 ];
 
