@@ -18,7 +18,7 @@ app.get("/test", (req, res) => {
 });
 
 app.get("/", async (req, res) => {
-  res.send("Hello world");
+  
   let results;
   try {
     results = await connectionPool.query(
